@@ -6,7 +6,6 @@
 # Date: April 01, 2015
 # # # # # # # # # # # # #
 
-import json
 import mailchimp
 
 def get_mailchimp_api():
@@ -23,11 +22,8 @@ def main():
     with open ("example.html", "r") as html:
         data=html.read()
 
-    #print data
     html = str(data)
     inlinedHtml = inline_css(html)
-    #print json.dumps(inlinedHtml, sort_keys=True, indent=4, separators=(',', ': '))
-    #print inlinedHtml
     print '%s' % inlinedHtml['html']
 
 if __name__ == "__main__":
