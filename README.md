@@ -1,2 +1,2 @@
 # css-inliner
-# Justin Sovine 2015
+Justin Sovine 2015
