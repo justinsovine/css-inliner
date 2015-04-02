@@ -1,0 +1,4 @@
+// CSS Inliner Sublime Text Buildfile
+{
+    "cmd": ["css-inliner", "$file"]
+}
