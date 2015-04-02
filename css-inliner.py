@@ -10,7 +10,7 @@ import sys
 import mailchimp
 
 def get_mailchimp_api():
-    return mailchimp.Mailchimp('4ef9f73e3b3d1d5a7b2a71c1daf6ebf3-us8') # your api key here
+    return mailchimp.Mailchimp('') # your api key here
 
 def inline_css(html):
     try:
