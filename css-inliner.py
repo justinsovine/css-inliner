@@ -30,14 +30,10 @@ def main(inputFilePath):
 
     # Inline CSS
     inlinedHtmlJson = inline_css(html)
-
-    # Print Inlined CSS
     inlinedHtml = inlinedHtmlJson['html']
 
-    # Build new html file        
-    # Output file path
+    # Write new, inlined html file       
     outputFilePath = "%s.inlined" % inputFilePath
-
     with open(outputFilePath, "w") as outputHtml:
         outputHtml.write(inlinedHtml)
 
