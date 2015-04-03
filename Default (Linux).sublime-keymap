@@ -1,0 +1,8 @@
+[
+    {
+        "keys": [
+            "shift+ctrl+i"
+        ], 
+        "command": "run_cssinliner"
+    }
+]

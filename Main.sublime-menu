@@ -1,0 +1,56 @@
+[
+        {
+                "caption": "Preferences",
+                "mnemonic": "n",
+                "id": "preferences",
+                "children":
+                [
+                        {
+                            "caption": "Package Settings",
+                            "mnemonic": "P",
+                            "id": "package-settings",
+                            "children":
+                            [
+                                    {
+                                            "caption": "CSS Inliner",
+                                            "children":
+                                            [
+                                                    {
+                                                            "command": "open_file", "args":
+                                                            {
+                                                                    "file": "${packages}/CSSInliner/CSS Inliner.sublime-settings"
+                                                            },
+                                                            "caption": "Settings – Default"
+                                                    },
+                                                    {
+                                                            "command": "open_file", "args":
+                                                            {
+                                                                    "file": "${packages}/User/CSS Inliner.sublime-settings"
+                                                            },
+                                                            "caption": "Settings – User"
+                                                    },
+                                                    { "caption": "-" },
+                                                    {
+                                                        "command": "open_file",
+                                                        "args": {
+                                                                "file": "${packages}/CSSInliner/Default (Linux).sublime-keymap",
+                                                                "platform": "Linux"
+                                                        },
+                                                        "caption": "Key Bindings – Default"
+                                                    },
+                                                    {
+                                                        "command": "open_file",
+                                                        "args": {
+                                                                "file": "${packages}/User/Default (Linux).sublime-keymap",
+                                                                "platform": "Linux"
+                                                        },
+                                                        "caption": "Key Bindings – User"
+                                                    },
+                                                    { "caption": "-" }
+                                            ]
+                                    }
+                            ]
+                        }
+                ]
+        }
+]

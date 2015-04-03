@@ -1,13 +1,12 @@
-#!/usr/bin/python
-
-# # # # # # # # # # # # #
-# Title: CSS Inliner
-# Author: Justin Sovine
-# Date: April 01, 2015
-# # # # # # # # # # # # #
-
+import sublime, sublime_plugin
 import sys
 import mailchimp
+
+# needed for getting local app data path on windows
+if sublime.platform() == 'windows':
+    import _winreg
+
+s = sublime.load_settings('CSS Inliner.sublime-settings')
 
 def get_mailchimp_api():
     return mailchimp.Mailchimp('') # your api key here
@@ -16,6 +15,7 @@ def inline_css(html):
     try:
         m = get_mailchimp_api()
         return m.helper.inline_css(html)
+        
     except mailchimp.Error, e:
         messages.error(request,  'An error occurred: %s - %s' % (e.__class__, e))
 
