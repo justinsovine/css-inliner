@@ -3,7 +3,6 @@
 # # # # # # # # # # # # #
 # Title: CSS Inliner
 # Author: Justin Sovine
-# Date: April 01, 2015
 # # # # # # # # # # # # #
 
 import sys
