@@ -19,7 +19,6 @@ def inline_css(html):
         messages.error(request,  'An error occurred: %s - %s' % (e.__class__, e))
 
 def main(inputFilePath):
-
     # Import html from file
     htmlFile = inputFilePath
     with open(htmlFile , "r") as inputHtml:
